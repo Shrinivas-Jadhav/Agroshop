@@ -27,10 +27,7 @@ urlpatterns = [
 
     path('search/',views.search, name='search'),
 
-    path('pluscart/', views.plus_cart),
-    path('minuscart/', views.minus_cart),
-    path('removecart/', views.remove_cart),
-
+   
     #login
     path('registration/' , views.CustomerRegistrationView.as_view(), name='customerregistration'),
     path('accounts/login/', auth_view.LoginView.as_view(template_name='app/login.html', authentication_form=LoginForm),name='login'),
