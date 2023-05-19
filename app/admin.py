@@ -9,11 +9,6 @@ class ProductModelAdmin(admin.ModelAdmin):
     list_display = ['id','title','selling_price','discounted_price','category','product_image']
 
 
-@admin.register(Customer)
-class CustomerModelAdmin(admin.ModelAdmin):
-    list_display = ['id','user','locality','city','state','zipcode']
-
-
 @admin.register(Cart)
 class CartModelAdmin(admin.ModelAdmin):
    list_display=['id','user','products','quantity']
